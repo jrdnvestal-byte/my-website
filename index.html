@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is my first webpage using HTML!</p>
+</body>
+</html>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+</form>
+
+<img src="https://via.placeholder.com/400" alt="Sample Image">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+<link rel="stylesheet" href="styles.css">
+
+<button onclick="changeText()">Click Me!</button>
+<p id="text">This text will change when you click the button.</p>
+
+<form onsubmit="return validateForm()" action="#" method="POST"></form>
