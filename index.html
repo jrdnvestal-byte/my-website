@@ -42,3 +42,27 @@
 <p id="text">This text will change when you click the button.</p>
 
 <form onsubmit="return validateForm()" action="#" method="POST"></form>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img src="images/profile.jpg" alt="Profile picture of [Your Name]">
+    <p>Hello! My name is [Your Name], and I am a web developer passionate about creating accessible websites.</p>
+</section>
+
+// Enable keyboard navigation for links
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Tab") {
+        document.activeElement.classList.add("focused");
+    }
+});
